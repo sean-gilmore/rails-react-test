@@ -15,15 +15,15 @@ Then run:
 
 To connect to the running application container, run:
 
-`docker exec -it restarone_app /bin/sh`
+`docker exec -it rails-react-test_app /bin/sh`
 
 The same command can be run for the databse, and redis containers.
 
 To restart just the app server, run the following:
 
-`docker-compose restart restarone_app`
+`docker-compose restart rails-react-test_app`
 
 Running test suite as a one off:
 
-`docker-compose run --rm restarone_test rails test:full_suite`
+`docker-compose run --rm rails-react-test_test rails test:full_suite`
 
